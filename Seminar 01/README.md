@@ -54,17 +54,17 @@
 
  - Без загуба на информация.
 ```c++
-	bool b = true; //1
-	int a = b; // 
+    bool b = true; //1
+    int a = b; // 
 ```
 ```c++
-	int n = 4; 
-	double m = n; //4.0 
+    int n = 4; 
+    double m = n; //4.0 
 ```
  - Със загуба на информация
 ```c++
-	int a = 10;
-	bool b = a; //1 
+    int a = 10;
+    bool b = a; //1 
 ```
 ```c++
     double PI = 3.14;
