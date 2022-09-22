@@ -17,21 +17,19 @@ We will need it for later.
 
 ## 4) Set up environmental variable(For Windows users)
 1. Open your search tab
-
 2. Search for `edit environment variables for your account`
+
 ![](./assets/3.png)
-
 3. Click on `Path` in the user variables tab
+
 ![](./assets/4.png)
-
 4. Click on `Edit`
+
 ![](./assets/5.png)
-
 5. Add a new path by clicking on `New`
+
 ![](./assets/6.png)
-
 6. Paste the path from the last step and add *'\bin'* at the end of the path
-
 7. You are all set!
 
 ## 5) [Optional] If you don't want to run programs via terminal
