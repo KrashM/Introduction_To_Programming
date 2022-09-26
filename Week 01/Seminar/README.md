@@ -85,3 +85,91 @@
 -   Приоритет
 -   Асоциативност
 -   Позиция на оператора спярмо аргумента -  _префиксен_,  _инфиксен_  и  _суфиксен_
+
+<h1>Задачи</h1>
+
+**Задача 1** Отпечатайте на конзолата вашето име.
+
+```c++
+Изход:
+Hristo
+```
+
+**Задача 2** Напишете програма, която да извежда големината на фундаменталните типове променливи.
+
+```c++
+Изход:
+The sizeof(char) is: 1 bytes
+The sizeof(short) is: 2 bytes
+The sizeof(int) is: 4 bytes
+The sizeof(long) is: 8 bytes
+The sizeof(long long) is: 8 bytes
+The sizeof(float) is: 4 bytes
+The sizeof(double) is: 8 bytes
+The sizeof(long double) is: 16 bytes
+The sizeof(bool) is: 1 bytes
+```
+
+**Задача 3** Напишете програма, която да извежда минималната и максималната стойност на числовите типове.
+```c++
+Изход:
+The maximum of int data type: 2147483647
+The minimum of int data type: -2147483648
+The maximum of unsigned int data type: 4294967295
+The maximum of long long data type: 9223372036854775807
+The minimum of long long data type: -9223372036854775808
+The maximum of unsigned long long data type: 18446744073709551615
+The maximum of char data type: 127
+The minimum of char data type: -128
+The maximum of signed char data type: 127
+The minimum of signed char data type: -128
+The maximum of unsigned char data type: 255
+The minimum of short data type: -32768
+The maximum of short data type: 32767
+The maximum of unsigned short data type: 65535
+```
+
+**Задача 4** Въведете цяло число. Да се отпечата 1, ако числото е четно и 0, ако е нечетно.
+```c++
+Вход: 21 Изход: 0
+Вход: 4 Изход: 1
+```
+
+**Задача 5** Въведете цяло трицифрено число n. Да се отпечата числото наобратно.
+
+```c++
+Вход: 123 Изход: 321
+Вход: 836 Изход: 638
+```
+
+**Задача 6** Въвеждат се две цели числа n и m. Да се отпечата:
+
+- Тяхната сума
+- Абсолютна стойност на тяхната разлика
+- Остатъка при деление на първото с второто число
+- Цялата част на частното на двете числа
+- Частното на n със m
+- Частното на n със m, закръглено надолу
+- Частното на n със m, закръглено нагоре
+- Сборът на n^2 + m^(1/2)
+
+```c++
+Вход: 13 4 Изход:
+Сума: 17
+Абсолютна стойност: 9
+Остатък: 1
+Цяла част: 3
+Частно: 3.25
+Долна скоба: 3
+Горна скоба: 4
+Сбор: 171
+```
+
+**Задача 7** Да се напише програма която разменя стойноста на две променливи.
+
+- С помощна променлива
+- С аритметични операции
+
+```c++
+Вход: a = 34 b = 12 Изход: a = 12 b = 34
+```
