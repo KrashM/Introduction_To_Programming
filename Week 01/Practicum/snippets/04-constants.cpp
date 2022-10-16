@@ -7,4 +7,6 @@ int main ()
 
     // const double PI2;
     // PI = 2;
+
+    return 0;
 }
