@@ -2,7 +2,7 @@
 
 int main ()
 {
-    int year;
+    unsigned int year;
 
     std::cin >> year;
 
