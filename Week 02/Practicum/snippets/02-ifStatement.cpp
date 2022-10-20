@@ -9,6 +9,10 @@ int main ()
 
     double a, b, c;
 
+    double test1 = 5.22, test2 = (4.9 + 0.32);
+
+    std::cout << std::boolalpha << (test1 == test2) << std::endl;
+
     std::cin >> a >> b >> c;
 
     if (std::fabs(a) < EPS) // 'a' equals 0, so the equation is linear (b*x + c = 0)

@@ -7,6 +7,7 @@ int main ()
     std::cout << "Enter a day of the week (1 - 7): ";
     std::cin >> dayOfTheWeek;
 
+    // Can be used with integer types and char
     switch (dayOfTheWeek)
     {
     case 1:
