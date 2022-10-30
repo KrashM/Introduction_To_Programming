@@ -8,11 +8,14 @@ int main ()
 
     for (std::size_t i = 1; i <= n; ++i)
     {
-        for (std::size_t j = 1; j <= i; ++j)
+        if (i % 2 == 1)
         {
-            std::cout << j << " ";
+            for (std::size_t j = 1; j <= i; j += 2)
+            {
+                std::cout << j << " ";
+            }
+            std::cout << std::endl;
         }
-        std::cout << std::endl;
     }
 
     return 0;
