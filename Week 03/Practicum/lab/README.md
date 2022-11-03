@@ -97,7 +97,7 @@ Nikola will tell his friends that the alcohol is 12 levs
 ### Задача 10 :snowflake:
 След по-малко от 2 месеца идват коледните и новогодишните празници. Вашата задача е да отпечатате снежинка на конзолата при въдедено <b>нечетно</b> число `n`.
 ```
-Вход 1: 3
+Вход 1: 5
 Изход 1:
 *   *   *
   * * *
@@ -105,7 +105,7 @@ Nikola will tell his friends that the alcohol is 12 levs
   * * *
 *   *   *
 
-Вход 2: 5
+Вход 2: 7
 Изход 2:
 *     *     *
   *   *   *
@@ -115,7 +115,7 @@ Nikola will tell his friends that the alcohol is 12 levs
   *   *   *
 *     *     *
 
-Вход 3: 7
+Вход 3: 9
 Изход 3:
 *       *       *
   *     *     *
