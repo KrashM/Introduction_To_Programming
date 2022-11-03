@@ -4,15 +4,15 @@
 
 int main()
 {
-    int n;
-    std::cin >> n;
-    if (n % 2 == 0)
+    int iterations;
+    std::cin >> iterations;
+    if (iterations % 2 == 0)
     {
         return 1;
     }
 
     // Note that the number n means the spaces between the stars on first and last row
-    int spaces = n, offset = 0, iterations = n + 2;
+    int spaces = iterations - 2, offset = 0;
     for (int i = 0; i < iterations; ++i)
     {
         for (int i = 0; i < offset; ++i)
