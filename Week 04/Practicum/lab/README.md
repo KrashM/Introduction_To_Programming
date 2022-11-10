@@ -10,7 +10,7 @@ int a = 2, b = -3;
 changeSign(a);
 changeSign(b);
 
-std::cout << a << "" << b << std::endl; // -2 3
+std::cout << a << " " << b << std::endl; // -2 3
 ```
 
 ### Задача :three:
