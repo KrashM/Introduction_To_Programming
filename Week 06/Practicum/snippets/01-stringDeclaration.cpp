@@ -4,7 +4,7 @@ const std::size_t MAX_CAPACITY = 1024;
 
 int main ()
 {
-    char str1[] = {'F', 'M', 'I', '\0'};
+    const char str1[] = {'F', 'M', 'I', '\0'};
     
     const char str2[] = "Hello";
     
@@ -16,6 +16,9 @@ int main ()
 
     char str4[MAX_CAPACITY];
     std::cin >> str4;
+
+    std::cin.ignore();
+    //std::cin.get();
 
     char str5[MAX_CAPACITY];
     std::cin.getline(str5, MAX_CAPACITY);

@@ -1,6 +1,6 @@
 #include <iostream>
 
-bool isPalindrom(int number);
+bool isPalindrom(int number); // declaration
 
 int factorial(int number);
 
@@ -27,7 +27,7 @@ int main ()
     return 0;
 }
 
-bool isPalindrom(int number)
+bool isPalindrom(int number) // definition
 {
     int opposite = 0;
     int temp = number;
