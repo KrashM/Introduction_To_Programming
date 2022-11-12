@@ -8,3 +8,4 @@
 ### [:four:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Week%2004) Functions
 ### [:five:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Week%2005) Arrays
 ### [:six:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Week%2006) Strings
+### [:seven:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Week%2007) Control prep
