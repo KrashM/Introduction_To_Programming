@@ -3,7 +3,7 @@
 
 bool is2Divisible(int x){
 
-    for(int i = 0; i < std::sqrt(x); i++)
+    for(int i = 2; i < std::sqrt(x); i++)
         if(i * (i + 1) == x) return true;
 
     return false;
