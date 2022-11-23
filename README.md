@@ -10,4 +10,5 @@
 ### [:five:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Week%2005) Arrays
 ### [:six:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Week%2006) Strings
 ### [:seven:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Week%2007) Control prep
-### [:eight:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Week%2007) Numeric systems, Bitwise operators, Exceptions
+### [:eight:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Week%2008) Numeric systems, Bitwise operators, Exceptions
+### [:nine:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Week%2009) References, Pointers, Dynamic memory
