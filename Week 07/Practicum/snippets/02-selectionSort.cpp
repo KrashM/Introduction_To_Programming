@@ -6,7 +6,7 @@ void readArray(int array[], std::size_t size);
 
 void printArray(const int array[], std::size_t size);
 
-unsigned minFrom(int array[], unsigned from, unsigned to);
+std::size_t minFrom(int array[], unsigned from, unsigned to);
 
 void selectionSort(int array[], std::size_t size);
 
