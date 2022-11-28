@@ -16,10 +16,10 @@
 ## :pushpin: Contents by weeks (Practicum):
 ### [:zero:](https://github.com/KrashM/Introduction_To_Programming/blob/main/Seminar/Week%2001/InstallationGuide.md) Setup
 ### [:one:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week01-DataTypesAndOperators) Data Types, Variables, Constants, Operators 
-### [:two:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week02-ConditionalOperators) Cmath, Conditional operators, Doubles comparison
+### [:two:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week02-ConditionalOperators) Cmath, Conditional Operators, Doubles Comparison
 ### [:three:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week03-Loops) Loops
 ### [:four:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week04-Functions) Functions, References
 ### [:five:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week05-Arrays) Arrays
 ### [:six:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week06-Strings) Strings
-### [:seven:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week07-ArrayAlgorithmsAndMatrices) Array algorithms (Sorts and Searches), Matrices
+### [:seven:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week07-ArrayAlgorithmsAndMatrices) Array Algorithms (Sorts and Searches), Matrices
 ### [:eight:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week08-PointersAndDynamicMemory) Pointers, Dynamic Memory
