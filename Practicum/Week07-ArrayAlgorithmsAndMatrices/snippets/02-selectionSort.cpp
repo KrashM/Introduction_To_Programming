@@ -6,7 +6,7 @@ void readArray(int array[], std::size_t size);
 
 void printArray(const int array[], std::size_t size);
 
-std::size_t minFrom(int array[], unsigned from, unsigned to);
+std::size_t minFrom(const int array[], std::size_t from, std::size_t to);
 
 void selectionSort(int array[], std::size_t size);
 
@@ -42,7 +42,7 @@ void printArray(const int array[], std::size_t size)
     std::cout << std::endl;
 }
 
-std::size_t minFrom(int array[], std::size_t from, std::size_t to)
+std::size_t minFrom(const int array[], std::size_t from, std::size_t to)
 {
     std::size_t min = from;
     for (std::size_t i = from + 1; i < to; ++i)
