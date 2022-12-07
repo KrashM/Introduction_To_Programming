@@ -13,6 +13,7 @@
 ### [:eight:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminar/Week%2008) Numeric systems, Bitwise operators, Exceptions
 ### [:nine:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminar/Week%2009) References, Pointers, Dynamic memory
 ### [:one::zero:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminar/Week%2010) Multidimensional Arrays
+### [:one::one:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminar/Week%2011) Recursion
 
 ## :pushpin: Contents by weeks (Practicum):
 ### [:zero:](https://github.com/KrashM/Introduction_To_Programming/blob/main/Seminar/Week%2001/InstallationGuide.md) Setup
