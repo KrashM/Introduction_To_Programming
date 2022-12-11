@@ -25,3 +25,4 @@
 ### [:six:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week06-Strings) Strings
 ### [:seven:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week07-ArrayAlgorithmsAndMatrices) Array Algorithms (Sorts and Searches), Matrices
 ### [:eight:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week08-PointersAndDynamicMemory) Pointers, Dynamic Memory
+### [:nine:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week09-MoreStringsMatricesDM) More Strings, Matrices, Dynamic Memory
