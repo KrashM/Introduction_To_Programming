@@ -65,7 +65,7 @@ I Got Your Distress signal And drove Here As Soon As I Wanted To
 
 Вход: 	
 ```
-The Queen, Snow White’s stepmother, knew how much this meant to her husband. At the first chance, she went to her magic mirror. “Mirror, mirror, on the wall,” said the Queen. “Who is the fairest of them all?” $
+The Queen, Snow White's stepmother, knew how much this meant to her husband. At the first chance, she went to her magic mirror. “Mirror, mirror, on the wall,” said the Queen. “Who is the fairest of them all?” $
 ```
 
 Изход:
