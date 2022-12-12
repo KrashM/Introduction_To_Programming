@@ -26,3 +26,9 @@
 ### [:seven:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week07-ArrayAlgorithmsAndMatrices) Array Algorithms (Sorts and Searches), Matrices
 ### [:eight:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week08-PointersAndDynamicMemory) Pointers, Dynamic Memory
 ### [:nine:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week09-MoreStringsMatricesDM) More Strings, Matrices, Dynamic Memory
+
+## :notebook: Hristo's 2021/2022 Notes:
+### [:date:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Hristo's%20Notes/Homeworks) Homeworks
+### [:bookmark_tabs:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Hristo's%20Notes/Controls) Controls
+### [:mortar_board:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Hristo's%20Notes/Exam) Exam
+### [:file_folder:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Hristo's%20Notes/Stuff) Random stuff
