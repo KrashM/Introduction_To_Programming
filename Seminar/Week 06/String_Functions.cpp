@@ -47,6 +47,38 @@ void strcat(char str1[], const char str2[]){
 
 }
 
+// Returns a pointer to the first instance of ch
+char *strchr(char str[], const char &ch){
+
+    size_t i = 0;
+    while(str[i] != ch && str[i] != '\0') ++i;
+    if(str[i] != '\0') return str + i;
+    return nullptr;
+
+}
+
+// Returns a pointer to the first instance of str2
+char *strstr(char str[], const char str2[]){
+
+    if(strcmp(str, "\0") == 0) return str;
+
+    for(size_t i = 0; str[i] != '\0'; ++i){
+
+        if(str[i] == str2[0]){
+
+            size_t j;
+            for(j = 0; str[i + j] != '\0' && str2[j] != '\0'; ++j)
+                if(str[i + j] != str2[j]) break;
+            if(str2[j] == '\0') return str + i;
+
+        }
+
+    }
+
+    return nullptr;
+
+}
+
 int main(){
 
     // Define 3 strings
