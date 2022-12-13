@@ -81,9 +81,9 @@ her – 2
 who – 1  
 white's – 1  
 went – 1  
-wall – 1  
-them – 1  
-this – 1  
+wall – 1
+this – 1
+them – 1    
 stepmother – 1  
 snow – 1  
 she – 1  
