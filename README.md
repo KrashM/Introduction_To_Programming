@@ -28,6 +28,8 @@
 ### [:eight:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week08-PointersAndDynamicMemory) Pointers, Dynamic Memory
 ### [:nine:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week09-MoreStringsMatricesDM) More Strings, Matrices, Dynamic Memory
 
+### [:one::zero:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week10-Recursion) Recursion
+
 ## :notebook: Hristo's 2021/2022 Notes:
 ### [:date:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Hristo's%20Notes/Homeworks) Homeworks
 ### [:bookmark_tabs:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Hristo's%20Notes/Controls) Controls
