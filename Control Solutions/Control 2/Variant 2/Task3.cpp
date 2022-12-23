@@ -18,6 +18,13 @@ int main(){
 
     cin >> n;
 
+    if(n <= 1){
+
+        cout << 0 << '\n';
+        return 0;
+
+    }
+
     cin >> temp.x >> temp.y;
 
     minX = maxX = temp.x;
