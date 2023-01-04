@@ -74,4 +74,4 @@ int main()
 
 **Задача 3** Да се направи рекурсивна функция, която принтира всички subset-ове на даден set.
 
-**Задача 4** Да се реализира !["The eight queen problem"](https://en.wikipedia.org/wiki/Eight_queens_puzzle), само че разписана за n кралици.
+**Задача 4** Да се реализира "[The eight queen problem](https://en.wikipedia.org/wiki/Eight_queens_puzzle)", само че разписана за n кралици.
