@@ -15,6 +15,8 @@
 ### [:one::zero:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminar/Week%2010) Multidimensional Arrays
 ### [:one::one:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminar/Week%2011) Recursion
 ### [:one::two:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminar/Week%2012) Structs
+### [:one::three:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminar/Week%2013) Macros
+### [:one::four:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminar/Week%2014) Files
 
 ## :pushpin: Contents by weeks (Practicum):
 ### [:zero:](https://github.com/KrashM/Introduction_To_Programming/blob/main/Seminar/Week%2001/InstallationGuide.md) Setup
