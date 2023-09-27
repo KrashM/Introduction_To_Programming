@@ -4,4 +4,4 @@
 ## :pushpin: Contents by weeks (Seminar):
 
 ## :pushpin: Contents by weeks (Practicum):
-<!-- ## [:exclamation:](https://github.com/KrashM/Introduction_To_Programming/blob/main/Seminar/Week%2001/InstallationGuide.md) Installation guide for VS Code and C++ -->
+## [:exclamation:](https://github.com/KrashM/Introduction_To_Programming/blob/main/Utils/InstallationGuide.md) Installation guide for VS Code and C++
