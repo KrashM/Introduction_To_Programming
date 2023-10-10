@@ -3,6 +3,7 @@
 
 ## :pushpin: Contents by weeks (Seminars):
 ### [:one:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2001) Hello World, Variables, Data types, Type Casting, Operators, Size and Limits
+### [:two:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2002) Conditional statements
 
 ## :pushpin: Contents by weeks (Practicum):
 ### [:one:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2001) Data types and operators, functions from climits, cmath and iomanip libraries
