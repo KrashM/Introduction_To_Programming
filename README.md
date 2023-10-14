@@ -2,11 +2,11 @@
 ## :computer: Course for students at FMI Sofia University
 
 ## :pushpin: Contents by weeks (Seminars):
-### [:one:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2001) Hello World, Variables, Data types, Type Casting, Operators, Size and Limits
-### [:two:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2002) Conditional statements
+### [:one: Hello World, Variables, Data types, Type Casting, Operators, Size and Limits](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2001) 
+### [:two: Conditional statements](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2002) 
 
 ## :pushpin: Contents by weeks (Practicum):
-### [:one:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2001) Data types and operators, functions from climits, cmath and iomanip libraries
-### [:two:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2002) Conditional statements - if, if-else, switch-case, ternary operator
+### [:one: Data types and operators, functions from climits, cmath and iomanip libraries](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2001) 
+### [:two: Conditional statements - if, if-else, switch-case, ternary operator](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2002) 
 
-## [:exclamation:](https://github.com/KrashM/Introduction_To_Programming/blob/main/Utils/InstallationGuide.md) Installation guide for VS Code and C++
+## [:exclamation: Installation guide for VS Code and C++](https://github.com/KrashM/Introduction_To_Programming/blob/main/Utils/InstallationGuide.md) 
