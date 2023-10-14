@@ -7,5 +7,6 @@
 
 ## :pushpin: Contents by weeks (Practicum):
 ### [:one:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2001) Data types and operators, functions from climits, cmath and iomanip libraries
+### [:two:](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2002) Conditional statements - if, if-else, switch-case, ternary operator
 
 ## [:exclamation:](https://github.com/KrashM/Introduction_To_Programming/blob/main/Utils/InstallationGuide.md) Installation guide for VS Code and C++
