@@ -5,6 +5,8 @@
 ### [:one: Hello World, Variables, Data types, Type Casting, Operators, Size and Limits](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2001) 
 ### [:two: Conditional statements](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2002) 
 ### [:three: Numeric systems, Bitwise operators](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2003) 
+### [:four: Loops - for, while, do-while](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2004) 
+
 
 ## :pushpin: Contents by weeks (Practicum):
 ### [:one: Data types and operators, functions from climits, cmath and iomanip libraries](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2001) 
