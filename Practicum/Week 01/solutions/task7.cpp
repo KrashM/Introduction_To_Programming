@@ -12,7 +12,7 @@ int main()
               << std::endl; 
 
     // Bonus task 
-    std::cout << std::boolalpha << ((a - c) * (c - b) < 0) << std::endl; 
+    std::cout << std::boolalpha << ((a - b) * (c - b) < 0) << std::endl; 
 
     return 0;
 }
