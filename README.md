@@ -14,5 +14,6 @@
 ### [:two: Conditional statements - if, if-else, switch-case, ternary operator](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2002)
 ### [:three: Bitwise operations and operators](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2003)
 ### [:four: Loops - for, while, do-while](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2004)
+### [:five: Functions](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2005)
 
 ## [:exclamation: Installation guide for VS Code and C++](https://github.com/KrashM/Introduction_To_Programming/blob/main/Utils/InstallationGuide.md)
