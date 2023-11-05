@@ -16,4 +16,7 @@
 ### [:four: Loops - for, while, do-while](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2004)
 ### [:five: Functions](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2005)
 
+## :pushpin: Additionals:
+### [:date: Control preparation Computer Science 1 - 31.10.2023](https://github.com/KrashM/Introduction_To_Programming/tree/main/Additional%20Exercises/Control%20preparation%20CS%201%20-%2031.10.2023)
+
 ## [:exclamation: Installation guide for VS Code and C++](https://github.com/KrashM/Introduction_To_Programming/blob/main/Utils/InstallationGuide.md)
