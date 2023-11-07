@@ -42,7 +42,43 @@ int main(){
                 //--------------------------------Solution----------------------------------------
                 std::cout << "The date is valid" << std::endl;
                 //--------------------------------Solution----------------------------------------
-               
+                
+
+                //--------------------------------Bonus----------------------------------------
+                if(isLeapYear) std::cout << "Leap year " ; //If it is a leap year print it
+                
+                if( day < 10 ){ //if day is < 10 print a zero before the day
+                    std::cout << '0' ; 
+                }
+                std::cout << day ;
+                if ( day == 11 || day == 12 || day == 13){
+                    std::cout << "th"; //If the day is 11,12 or 13 print "th"
+                }
+                else{
+                    switch ( day % 10 ){  //Print day suffix
+                        case 1: std::cout << "st" ; break;
+                        case 2: std::cout << "nd" ; break;
+                        case 3: std::cout << "rd" ; break;
+                        default: std::cout << "th" ; break;    
+                    }   
+                }
+                std::cout<<' ';  //Print space
+                switch ( month ){  //Print the month name 
+                    case 1: std::cout << "January" ; break;
+                    case 2: std::cout << "February" ; break;
+                    case 3: std::cout << "March" ; break;
+                    case 4: std::cout << "April" ; break;
+                    case 5: std::cout << "May" ; break;
+                    case 6: std::cout << "June" ; break;
+                    case 7: std::cout << "July" ; break;
+                    case 8: std::cout << "August" ; break;
+                    case 9: std::cout << "September" ; break;
+                    case 10: std::cout << "October" ; break;
+                    case 11: std::cout << "November" ; break;
+                    case 12: std::cout << "December" ; break;
+                }
+                std::cout << ' ' << year << std::endl;  //Print space and the year
+                //--------------------------------Bonus----------------------------------------
             }
         }
     }
