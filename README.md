@@ -8,6 +8,7 @@
 ### [:four: Loops](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2004)
 ### [:five: Functions](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2005)
 ### [:six: Arrays](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2006)
+### [:seven: Algorithms & Time complexity](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2007)
 
 
 ## :pushpin: Contents by weeks (Practicum):
