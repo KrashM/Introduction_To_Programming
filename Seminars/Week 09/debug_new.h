@@ -18,11 +18,11 @@ struct ptr_info{
 
     char const *file, *function;
     void *ptr = nullptr;
-    std::size_t size;
+    size_t size;
     int line;
 
     ptr_info(){}
-    ptr_info(void * const ptr, std::size_t const size, char const *file, char const *function, int const line): ptr(ptr), size(size), file(file), function(function), line(line){}
+    ptr_info(void * const ptr, size_t const size, char const *file, char const *function, int const line): ptr(ptr), size(size), file(file), function(function), line(line){}
 
 };
 
@@ -32,7 +32,6 @@ typedef std::vector<ptr_info>::iterator v_iter;
 void *allocateMemory(size_t const size, char const *file, char const *function, int const line){
 
     void *ptr = malloc(size);
-    if(!ptr) throw std::bad_alloc{};
 
     info_list.emplace_back(ptr, size, file, function, line);
 
@@ -55,18 +54,18 @@ void freeMemory(void *ptr){
 
 }
 
-void *operator new(std::size_t const size, char const *file, char const *function, int const line){ return allocateMemory(size, file, function, line); }
-void *operator new[](std::size_t const size, char const *file, char const *function, int const line){ return allocateMemory(size, file, function, line); }
+void *operator new(size_t const size, char const *file, char const *function, int const line){ return allocateMemory(size, file, function, line); }
+void *operator new[](size_t const size, char const *file, char const *function, int const line){ return allocateMemory(size, file, function, line); }
 
 void operator delete(void *pointer) noexcept{ freeMemory(pointer); }
 void operator delete[](void *pointer) noexcept{ freeMemory(pointer); }
 
-void operator delete(void *pointer, std::size_t const size) noexcept{ freeMemory(pointer); }
-void operator delete[](void *pointer, std::size_t const size) noexcept{ freeMemory(pointer); }
+void operator delete(void *pointer, size_t const size) noexcept{ freeMemory(pointer); }
+void operator delete[](void *pointer, size_t const size) noexcept{ freeMemory(pointer); }
 
 void printList(){
 
-    for(std::size_t i = 0; i < info_list.size(); ++i)
+    for(size_t i = 0; i < info_list.size(); ++i)
         printf("%zu. Found leaked object at %#x (size %zu[bytes]) allocated in: %s: %s(): %d\n", 
             i + 1, info_list[i].ptr, info_list[i].size, info_list[i].file, info_list[i].function, info_list[i].line);
 
@@ -81,7 +80,7 @@ void checkMemoryLeaks(){
 
     }
 
-    for(std::size_t i = 0; i < info_list.size(); ++i){
+    for(size_t i = 0; i < info_list.size(); ++i){
 
         printf("%zu. Found leaked object at %#x (size %zu[bytes]) allocated in: %s: %s(): %d\n", 
             i + 1, info_list[i].ptr, info_list[i].size, info_list[i].file, info_list[i].function, info_list[i].line);
@@ -93,6 +92,6 @@ void checkMemoryLeaks(){
 
 }
 
-#define new new(__FILE__, __FUNCTION__, __LINE__)
+#define new(NOTHROW) new(__FILE__, __FUNCTION__, __LINE__)
 
 #endif

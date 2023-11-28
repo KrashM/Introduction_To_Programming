@@ -13,7 +13,7 @@ int main(){
 
     std::cout << ptr << ' ' << *ptr << '\n';
 
-    ptr = new int(5);
+    ptr = new(std::nothrow) int(5);
 
     std::cout << ptr << ' ' << *ptr << '\n';
 
@@ -26,10 +26,10 @@ int main(){
     std::cout << "Print 2:\n";
     printList();
 
-    int **matrix = new int*[10];
+    int **matrix = new(std::nothrow) int*[10];
 
     for(size_t i = 0; i < 10; ++i)
-        matrix[i] = new int[7];
+        matrix[i] = new(std::nothrow) int[7];
 
     std::cout << "Print 3:\n";
     printList();
