@@ -21,6 +21,7 @@
 ### [:five: Functions](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2005)
 ### [:six: One-dimentional numerical arrays](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2006)
 ### [:seven: Algorithms & Complexity](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2007)
+### [:eight: Multidimentional Numerical Arrays](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2008)
 
 ## :pushpin: Additionals:
 ### [:date: Control preparation Computer Science 1 - 31.10.2023](https://github.com/KrashM/Introduction_To_Programming/tree/main/Additional%20Exercises/Control%20preparation%20CS%201%20-%2031.10.2023)
