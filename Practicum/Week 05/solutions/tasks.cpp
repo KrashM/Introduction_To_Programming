@@ -1,5 +1,6 @@
 #include <iostream>
 
+// -----------Task 1-----------
 int min(int a, int b)
 {
     if (a < b) return a;
@@ -28,6 +29,8 @@ void swap(int &a, int &b)
     a = b;
     b = temp;
 }
+// -----------Task 1-----------
+
 
 //------ Bonus ------
 double sqrt(double x) 
@@ -42,6 +45,8 @@ double sqrt(double x)
 }
 //------ Bonus ------
 
+
+// -----------Task 2-----------
 bool isPrime(int x)
 {
     if (x < 2) return false;
@@ -84,7 +89,9 @@ void printPrimeBreakdown(int x)
     }
     std::cout << std::endl;
 }
+// -----------Task 2-----------
 
+// -----------Task 3-----------
 bool ascending(int x)
 {
     bool asc = true;
@@ -99,7 +106,9 @@ bool ascending(int x)
     }
     return asc;
 }
+// -----------Task 3-----------
 
+// -----------Task 4-----------
 int GCD(int a, int b)
 {
     int biggestDivider = 1;
@@ -110,12 +119,50 @@ int GCD(int a, int b)
     }
     return biggestDivider;
 }
+// -----------Task 4-----------
 
+// -----------Task 5-----------
 int LCM(int a, int b)
 {
     return (a * b) / GCD(a, b);
 }
+// -----------Task 5-----------
 
+
+// -----------Task 6-----------
+long long append(int first, int second)
+{
+    // Alternative solution
+    // int digits = 0;
+    // long long temp = second;
+
+    // while (temp != 0)
+    // {
+    //     digits++;
+    //     temp /= 10;
+    // }
+
+    // return first * pow(10, digits) + second;    
+
+    long long result = 0;
+    long long step10 = 1;
+    while (second != 0)
+    {
+        result += ( step10 * (second % 10) );
+        second /= 10;
+        step10 *= 10;
+    }
+    while (first != 0)
+    {
+        result += ( step10 * (first % 10) );
+        first /= 10;
+        step10 *= 10;
+    }
+    return result;
+}
+// -----------Task 6-----------
+
+// -----------Task 7-----------
 bool isLeapYear(int year)
 {
     return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
@@ -215,37 +262,7 @@ void printMonth(int month)
     case 12: std::cout << "December"; break;
     }
 }
-
-long long append(int first, int second)
-{
-    // Alternative solution
-    // int digits = 0;
-    // long long temp = second;
-
-    // while (temp != 0)
-    // {
-    //     digits++;
-    //     temp /= 10;
-    // }
-
-    // return first * pow(10, digits) + second;    
-
-    long long result = 0;
-    long long step10 = 1;
-    while (second != 0)
-    {
-        result += ( step10 * (second % 10) );
-        second /= 10;
-        step10 *= 10;
-    }
-    while (first != 0)
-    {
-        result += ( step10 * (first % 10) );
-        first /= 10;
-        step10 *= 10;
-    }
-    return result;
-}
+// -----------Task 7-----------
 
 void task1()
 {
