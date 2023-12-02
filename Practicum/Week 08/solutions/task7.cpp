@@ -24,69 +24,52 @@ void ReadMatrix(int matrix[][MAX_SIZE], const unsigned int n, const unsigned int
     }
 }
 
-void fillWithFalse(bool arr[], int size)
+void PrintMatrix(const int matrix[][MAX_SIZE], const unsigned int n, const unsigned int m)
 {
-    for (int i = 0; i < size; i++)
+    for (unsigned i = 0; i < n; i++)
     {
-        arr[i] = 0;
+        for (unsigned j = 0; j < m; j++)
+        {
+            std::cout << matrix[i][j] << ' ';
+        }
+        std::cout << std::endl;
     }
 }
 
-bool isValidSudoku(int matrix[][MAX_SIZE])
+void TransformMatrix(int matrix[][MAX_SIZE], const unsigned int n, const unsigned int m)
 {
-    bool usedNumbers[10];
-
-    // Check rows
-    for (unsigned i = 0; i < 9; i++)
+    int j;
+    for (unsigned i = 0; i < n; i++)
     {
-        fillWithFalse(usedNumbers, 10);
-        for (unsigned j = 0; j < 9; j++)
+        j = 0;
+        while (matrix[i][j] != 1 && j < m)
         {
-            if (usedNumbers[matrix[i][j]])
-                return false;
-            usedNumbers[matrix[i][j]] = true;
+            j++;
+        }
+        if (j == m)
+        {
+            continue;
+        }
+        for (unsigned k = 0; k < m; k++)
+        {
+            matrix[i][k] = 1;
         }
     }
-
-    // Check columns
-    for (unsigned i = 0; i < 9; i++)
-    {
-        fillWithFalse(usedNumbers, 10);
-        for (unsigned j = 0; j < 9; j++)
-        {
-            if (usedNumbers[matrix[j][i]])
-                return false;
-            usedNumbers[matrix[j][i]] = true;
-        }
-    }
-
-    // Check small squares
-    for (unsigned x = 0; x < 3; x++)
-    {
-        for (unsigned y = 0; y < 3; y++)
-        {
-            fillWithFalse(usedNumbers, 10);
-            for (unsigned i = 0; i < 3; i++)
-            {
-                for (unsigned j = 0; j < 3; j++)
-                {
-                    if (usedNumbers[matrix[j][i]])
-                        return false;
-                    usedNumbers[matrix[j][i]] = true;
-                }
-            }
-        }
-    }
-    return true;
 }
 
 int main()
 {
     int matrix[MAX_SIZE][MAX_SIZE];
 
-    ReadMatrix(matrix, 9, 9);
+    unsigned int n = ReadSize(),
+                 m = ReadSize();
 
-    std::cout << std::endl
-              << isValidSudoku(matrix);
+    ReadMatrix(matrix, n, m);
+
+    std::cout << std::endl;
+    
+    TransformMatrix(matrix, n, m);
+    PrintMatrix(matrix, n, m);
+
     return 0;
 }
