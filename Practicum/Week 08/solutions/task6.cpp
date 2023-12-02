@@ -1,49 +1,102 @@
 #include <iostream>
-const unsigned int CAPACITY = 100;
-void reduceRow (unsigned int &n, unsigned int &m, int arr[][3], unsigned int k) {
 
-    for (size_t i = k; i < n; i++)
+
+const unsigned int MAX_SIZE = 100;
+
+unsigned int ReadIndex(unsigned int max){
+    unsigned int index;
+    do
     {
-        for (size_t j = 0; j < m; j++)
+        std::cin >> index;
+    } while(index >= max);
+
+    return index;
+
+}
+
+unsigned int ReadSize()
+{
+    unsigned int size;
+    do
+    {
+        std::cin >> size;
+    } while(size == 0 || size > MAX_SIZE);
+
+    return size;
+}
+
+void ReadMatrix(int matrix[][MAX_SIZE], const unsigned int n, const unsigned int m)
+{
+    for(unsigned i = 0; i < n; i++)
+    {
+        for(unsigned j = 0; j < m; j++)
         {
-            arr[i][j] = arr[i + 1][j];
+            std::cin >> matrix[i][j];
+        }
+    }    
+}
+
+void swap(int &a, int &b){
+    int temp=a;
+    a=b;
+    b=temp;
+}
+
+
+void RemoveRow(int matrix[][MAX_SIZE], unsigned int &n, unsigned int &m, const unsigned int row)
+{
+    for(unsigned i = row; i < n - 1; i++){
+        for(unsigned j = 0; j < m; j++){
+            swap(matrix[i][j],matrix[i+1][j]);
         }
     }
+    for(unsigned j = 0; j < m; j++)
+        matrix[n-1][j]=0;    
     n--;
 }
 
-void reduceCol (unsigned int &n, unsigned int &m, int arr[][3], unsigned int p) {
-
-    //reducing
-    for (size_t i = p; i < n; i++)
-    {
-        for (size_t j = 0; j < m; j++)
-        {
-            arr[j][i] = arr[j][i + 1];
+void RemoveColumn(int matrix[][MAX_SIZE], unsigned int &n, unsigned int &m, const unsigned int col)
+{
+    for(unsigned i = 0; i < n ; i++){
+        for(unsigned j = col; j < m - 1; j++){
+            swap(matrix[i][j],matrix[i][j+1]);
         }
     }
+    for(unsigned i = 0; i < n; i++)
+        matrix[i][m-1]=0;    
     m--;
 }
 
-void reduce(){}
-
-int main() {
-    unsigned int n = 3,m = 3, p = 1, k = 2;
-    int arr[3][3] = { {1, 2, 3}, 
-                    {4, 5, 6},
-                    {7, 8, 9}};
-
-    reduceRow(n, m, arr, p);
-    reduceCol(n, m, arr, k );
-
-    for (size_t i = 0; i < n; i++)
+void PrintMatrix(const int matrix[][MAX_SIZE], const unsigned int n, const unsigned int m)
+{
+    for(unsigned i = 0; i < n; i++)
     {
-        for (size_t j = 0; j < m; j++)
+        for(unsigned j = 0; j < m; j++)
         {
-            std::cout << arr[i][j] << " ";
+            std::cout << matrix[i][j] << ' ';
         }
-        std::cout << '\n';
-    }
+        std::cout << std::endl;
+    }  
+}
 
+
+int main()
+{
+    int matrix[MAX_SIZE][MAX_SIZE];
+
+    unsigned int n = ReadSize(),
+                 m = ReadSize();
+
+    ReadMatrix(matrix, n, m);
+    
+    unsigned int row = ReadIndex(n),
+                 col = ReadIndex(m);
+    
+    RemoveRow(matrix, n, m, row);
+    RemoveColumn(matrix, n, m, col);
+    
+    std::cout << std::endl;
+    PrintMatrix(matrix, n, m);
+    
     return 0;
 }
