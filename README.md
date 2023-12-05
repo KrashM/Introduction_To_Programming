@@ -11,6 +11,7 @@
 ### [:seven: Algorithms & Time complexity](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2007)
 ### [:eight: Multidimensional Arrays](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2008)
 ### [:nine: References, Pointers, Dynamic memory](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2009)
+### [:one::zero: (C)Strings](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2010)
 
 
 ## :pushpin: Contents by weeks (Practicum):
