@@ -61,3 +61,119 @@ You're ready to go :)
 
 2. Running the program
     - "exefilename" - runs the exe compiled from the previous command
+
+## 6) Setting up a debugger
+
+1. Open the debugger window on the left navigation bar.
+2. Click on **create a launch.json file**.
+3. After opening the launch.json file, click on the **Add configuration...** button in the bottom right.
+4. Search for C/C++: (gdb) launch. This will generate a template for us to fill.
+5. On program add the following: "\${fileDirname}/${fileBasenameNoExtension}.exe".
+6. Then on miDebuggerPath add the path to yout gdb.exe (it should be contained in the same folder as g++.exe)
+
+Your launch.json file should look something like this:
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/Program Files/mingw64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
+```
+
+Now we have the following problem. If we want to debug a program we have to compile it first (e.g. make an exe before debugging). We have two options:
+
+1. Leave it at this and just run the program once before debugging it.
+2. Set up additional tasks that will compile the program for us before the debugger is launched.
+
+If you want to continue with the second option follow the instructions below.
+
+1. Create another file named **tasks.json** in the same folder as **launch.json**.
+2. Paste the following code inside of **tasks.json**. And specify the path to your compiler.
+```json
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: Build file",
+            "command": "path/to/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ],
+    "version": "2.0.0"
+}
+```
+3. In your **launch.json** file we will add a prelaunch task right after your **setupCommands**:
+
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/Program Files/mingw64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: Build file"
+        }
+    ]
+}
+```
+
+### You are all set! 
