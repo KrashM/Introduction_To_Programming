@@ -4,6 +4,8 @@ const size_t MAX_SIZE = 100;
 
 bool CanFormRigthTriangle(double a, double b, double c)
 {
+    if (a == 0 || b == 0 || c == 0)
+        return false;
     if (a * a + b * b == c * c)
         return true;
     if (c * c + b * b == a * a)
