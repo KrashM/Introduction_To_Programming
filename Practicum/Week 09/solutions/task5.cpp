@@ -9,15 +9,10 @@ void Swap(unsigned int* a, unsigned int* b)
 
 unsigned int* CreateArray(const size_t size)
 {
-    unsigned int* array = new(std::nothrow) unsigned int[size];
-    if(!array)
-    {
-        return nullptr;
-    }
-    return array;
+    return new(std::nothrow) unsigned int[size];
 }
 
-void ReadArray(unsigned int* array, const size_t size)
+void ReadArray(unsigned int* const array, const size_t size)
 {
     for(size_t i = 0; i < size; i++)
     {
@@ -25,7 +20,7 @@ void ReadArray(unsigned int* array, const size_t size)
     }
 }
 
-void PrintArray(const unsigned int* array, const size_t size)
+void PrintArray(const unsigned int* const array, const size_t size)
 {
     for(size_t i = 0; i < size; i++)
     {
@@ -34,7 +29,7 @@ void PrintArray(const unsigned int* array, const size_t size)
     std::cout << std::endl;
 }
 
-void Modify(unsigned int* array, const size_t size)
+void Modify(unsigned int* const array, const size_t size)
 {
     for(size_t i = 0; i < size / 2; i++)
     {

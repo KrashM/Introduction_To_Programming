@@ -1,5 +1,14 @@
 #include <iostream>
 
+void Deallocate(int const * const * const matrix, const size_t rows)
+{
+    for(size_t i = 0; i < rows; i++)
+    {
+        delete[] matrix[i];
+    } 
+    delete[] matrix;
+}
+
 int** AllocateMatrix(const size_t rows, const size_t cols)
 {
     int** matrix = new(std::nothrow) int*[rows];
@@ -13,13 +22,7 @@ int** AllocateMatrix(const size_t rows, const size_t cols)
         matrix[i] = new(std::nothrow) int[cols];
         if(!matrix[i])
         {
-            for(size_t j = 0; j < i; j++)
-            {
-                delete[] matrix[j];
-            }
-            delete[] matrix;
-            matrix = nullptr;
-
+            Deallocate(matrix, i);
             return nullptr;
         }
     }
@@ -27,7 +30,7 @@ int** AllocateMatrix(const size_t rows, const size_t cols)
     return matrix;
 }
 
-void ReadMatrix(int** matrix, const size_t rows, const size_t cols)
+void ReadMatrix(int* const * const matrix, const size_t rows, const size_t cols)
 {
     for(size_t i = 0; i < rows; i++)
     {
@@ -38,7 +41,7 @@ void ReadMatrix(int** matrix, const size_t rows, const size_t cols)
     }
 }
 
-void PrintMatrix(int** matrix, const size_t rows, const size_t cols)
+void PrintMatrix(int const * const * const matrix, const size_t rows, const size_t cols)
 {
     for(size_t i = 0; i < rows; i++)
     {
@@ -48,16 +51,6 @@ void PrintMatrix(int** matrix, const size_t rows, const size_t cols)
         }
         std::cout << std::endl;
     }
-}
-
-void Deallocate(int** matrix, const size_t rows)
-{
-    for(size_t i = 0; i < rows; i++)
-    {
-        delete[] matrix[i];
-    } 
-    delete[] matrix;
-    matrix = nullptr;
 }
 
 int main()

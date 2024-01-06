@@ -2,15 +2,10 @@
 
 unsigned int* CreateArray(const size_t size)
 {
-    unsigned int* array = new(std::nothrow) unsigned int[size];
-    if(!array)
-    {
-        return nullptr;
-    }
-    return array;
+    return new(std::nothrow) unsigned int[size];
 }
 
-void ReadArray(unsigned int* array, const size_t size)
+void ReadArray(unsigned int* const array, const size_t size)
 {
     for(size_t i = 0; i < size; i++)
     {
@@ -18,7 +13,7 @@ void ReadArray(unsigned int* array, const size_t size)
     }
 }
 
-void Swap(unsigned int* a, unsigned int* b)
+void Swap(unsigned int* const a, unsigned int* const b)
 {
     int temp = *a;
     *a = *b;
@@ -26,7 +21,7 @@ void Swap(unsigned int* a, unsigned int* b)
 }
 
 // selection sort -> asc
-void SortAsc(unsigned int* array, const size_t from, const size_t to)
+void SortAsc(unsigned int* const array, const size_t from, const size_t to)
 {
     for(unsigned i = from; i < to; i++) 
     {
@@ -48,7 +43,7 @@ void SortAsc(unsigned int* array, const size_t from, const size_t to)
 
 
 // selection sort -> desc
-void SortDesc(unsigned int* array, const size_t from, const size_t to)
+void SortDesc(unsigned int* const array, const size_t from, const size_t to)
 {
     for(unsigned i = from; i < to; i++) 
     {
@@ -68,13 +63,13 @@ void SortDesc(unsigned int* array, const size_t from, const size_t to)
     }
 }
 
-void Sort(unsigned int* array, const size_t size)
+void Sort(unsigned int* const array, const size_t size)
 {
     SortAsc(array, 0, size / 2);
     SortDesc(array, size / 2, size);
 }
 
-void PrintArray(const unsigned int* array, const size_t size)
+void PrintArray(const unsigned int* const array, const size_t size)
 {
     for(size_t i = 0; i < size; i++)
     {

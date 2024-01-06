@@ -1,6 +1,6 @@
 #include <iostream> 
 
-void Swap(int* a, int* b)
+void Swap(int* const a, int* const b)
 {
     int temp = *a;
     *a = *b;

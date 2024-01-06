@@ -2,15 +2,10 @@
 
 int* CreateArray(const size_t size)
 {
-    int* array = new(std::nothrow) int[size];
-    if(!array)
-    {
-        return nullptr;
-    }
-    return array;
+    return new(std::nothrow) int[size];
 }
 
-void ReadArray(int* array, const size_t size)
+void ReadArray(int* const array, const size_t size)
 {
     for(size_t i = 0; i < size; i++)
     {
@@ -18,7 +13,7 @@ void ReadArray(int* array, const size_t size)
     }
 }
 
-void PrintArray(const int* array, const size_t size)
+void PrintArray(const int* const array, const size_t size)
 {
     for(size_t i = 0; i < size; i++)
     {
