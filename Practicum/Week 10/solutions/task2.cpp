@@ -1,6 +1,6 @@
 #include <iostream>
 
-size_t strlen(const char* str)
+size_t strlen(const char* const str)
 {
     unsigned int len = 0;
     while(str[len]) // str[len] != '\0'
@@ -22,7 +22,7 @@ int strcmp(const char* str1, const char* str2)
 
 // The destination array must be large enough to append the contents of 
 // source array (including the terminating null character).
-void strcat(char* destination, const char* source)
+void strcat(char* const destination, const char* const source)
 {
     size_t destLen = strlen(destination), 
            srcLen  = strlen(source);
@@ -36,7 +36,7 @@ void strcat(char* destination, const char* source)
 
 // The destination array must be large enough to contain the same string 
 // as source (including the terminating null character).
-void strcpy(char* destination, const char* source)
+void strcpy(char* const destination, const char* const source)
 {
     size_t srcLen = strlen(source);
     for(size_t i = 0; i < srcLen; i++)

@@ -11,7 +11,7 @@ void ReadArray(char array[][MAX_LEN], const unsigned int n)
     }
 }
 
-void Swap(char* a, char* b)
+void Swap(char* const a, char* const b)
 {
     char temp[MAX_LEN];
     strcpy(temp, a);

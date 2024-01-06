@@ -13,20 +13,19 @@ void ReadArray(char array[][MAX_LEN], const unsigned int n)
 
 void ClearArray(char array[][MAX_LEN], unsigned int& n)
 {
-    unsigned int k = 0, read = 0, write = 0;
+    unsigned int read = 0, write = 0;
     while(read < n)
     {
         if(strlen(array[read]) < 4)
         {
-            read++; k++;
+            read++;
         }
         else
         {
-            strcpy(array[write], array[read]);
-            read++; write++;
+            strcpy(array[write++], array[read++]);
         }
     }
-    n -= k;
+    n -= read - write;
 }
 
 void PrintArray(const char array[][MAX_LEN], const unsigned int n)

@@ -1,15 +1,14 @@
 #include <iostream>
 #include <cstring>
 
-int Find(const char* s, const char* s1)
+int Find(const char* const s, const char* const s1)
 {
-    int index = -1;
-    size_t sLen = strlen(s), s1Len = strlen(s1);
+    size_t const sLen = strlen(s), s1Len = strlen(s1);
 
     for(size_t i = 0; i < sLen; i++)
     {
         size_t j = 0;
-        while(*s && *s1 && s[i] == s1[j])
+        while(s[i] && s1[j] && s[i] == s1[j])
         {
             i++;
             j++;
@@ -19,12 +18,11 @@ int Find(const char* s, const char* s1)
 
         if(j - 1 == s1Len)
         {
-            index = i;
-            break;
+            return i;
         }
     }
 
-    return index;
+    return -1;
 }
 
 int main()

@@ -17,15 +17,17 @@ void Read(char matrix[][MAX_SIZE][MAX_LEN], const size_t n)
 
 bool IsSymetrical(const char matrix[][MAX_SIZE][MAX_LEN], const size_t n)
 {
-    bool symetrical = true;
-    for (size_t i = 0; i < n && symetrical; i++)
+    for (size_t i = 0; i < n; i++)
     {
-        for (size_t j = 0; j < i && symetrical; j++)
+        for (size_t j = 0; j < i; j++)
         {
-            symetrical &= !strcmp(matrix[i][j], matrix[j][i]);
+            if(strcmp(matrix[i][j], matrix[j][i]))
+            {
+                return false;
+            }
         }
     }
-    return symetrical;
+    return true;
 }
 
 int main()

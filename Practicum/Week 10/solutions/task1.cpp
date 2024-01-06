@@ -3,14 +3,22 @@
 
 const size_t MAX_SIZE = 100;
 
-char* ReverseStr(char* s)
+char* ReverseStr(char const * const s)
 {
-    int n = strlen(s);
-    for (int i = 0; i < n / 2; i++)
+    size_t const size = strlen(s);
+    char *reversed = new(std::nothrow) char[size];
+
+    if(!reversed)
     {
-        std::swap(s[i], s[n - i - 1]);
+        return nullptr;
     }
-    return s;
+
+    for (int i = 0; i < size / 2; i++)
+    {
+        reversed[i] = reversed[size - i - 1];
+    }
+
+    return reversed;
 }
 
 int main()

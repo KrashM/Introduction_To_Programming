@@ -3,7 +3,7 @@
 
 const size_t MAX_SIZE = 100, LETTERS = 26;
 
-bool IsValid(const char* str)
+bool IsValid(const char* const str)
 {
     unsigned int len = strlen(str);
     for(unsigned i = 0; i < len; i++)
@@ -16,7 +16,7 @@ bool IsValid(const char* str)
     return true;
 }
 
-char* RemoveDuplicates(const char* str)
+char* RemoveDuplicates(const char* const str)
 {
     unsigned int letters[LETTERS] = { 0, }, 
                  len = strlen(str);
@@ -44,8 +44,7 @@ char* RemoveDuplicates(const char* str)
     {
         if(letters[str[i] - 'a'] == 1)
         {
-            result[index] = str[i];
-            index++;
+            result[index++] = str[i];
         }
     }
     result[length] = '\0';
