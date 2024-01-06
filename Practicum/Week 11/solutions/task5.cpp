@@ -1,5 +1,14 @@
 #include <iostream>
 
+void Deallocate(int const * const * const matrix, const unsigned int n)
+{
+    for(unsigned i = 0; i < n; i++)
+    {
+        delete[] matrix[i];
+    } 
+    delete[] matrix;
+}
+
 int** AllocateMatrix(const unsigned int n, const unsigned int m)
 {
     int** matrix = new(std::nothrow) int*[n];
@@ -13,11 +22,7 @@ int** AllocateMatrix(const unsigned int n, const unsigned int m)
         matrix[i] = new(std::nothrow) int[m];
         if(!matrix[i])
         {
-            for(unsigned j = 0; j < i; j++)
-            {
-                delete[] matrix[j];
-            }
-            delete[] matrix;
+            Deallocate(matrix, i);
             matrix = nullptr;
 
             return nullptr;
@@ -27,7 +32,7 @@ int** AllocateMatrix(const unsigned int n, const unsigned int m)
     return matrix;
 }
 
-void ReadMatrix(int** matrix, const unsigned int n, const unsigned int m)
+void ReadMatrix(int * const * const matrix, const unsigned int n, const unsigned int m)
 {
     for(unsigned i = 0; i < n; i++)
     {
@@ -38,7 +43,7 @@ void ReadMatrix(int** matrix, const unsigned int n, const unsigned int m)
     }
 }
 
-int* MinInRow(int** matrix, const unsigned int n, const unsigned int m)
+int* MinInRow(int const * const * const matrix, const unsigned int n, const unsigned int m)
 {
     int* minInRow = new(std::nothrow) int[n];
     if(!minInRow)
@@ -61,7 +66,7 @@ int* MinInRow(int** matrix, const unsigned int n, const unsigned int m)
     return minInRow;
 }
 
-int* MaxInCol(int** matrix, const unsigned int n, const unsigned int m)
+int* MaxInCol(int const * const * const matrix, const unsigned int n, const unsigned int m)
 {
     int* maxInCol = new(std::nothrow) int[m];
     if(!maxInCol)
@@ -84,7 +89,7 @@ int* MaxInCol(int** matrix, const unsigned int n, const unsigned int m)
     return maxInCol;
 }
 
-void PrintLuckyNumbers(int** matrix, const unsigned int n, const unsigned int m)
+void PrintLuckyNumbers(int const * const * const matrix, const unsigned int n, const unsigned int m)
 {
     int* minInRow = MinInRow(matrix, n, m);
     if(!minInRow)
@@ -92,7 +97,7 @@ void PrintLuckyNumbers(int** matrix, const unsigned int n, const unsigned int m)
         std::cout << "Memory problem!" << std::endl;
         return;
     }
-        
+
     int* maxInCol = MaxInCol(matrix, n, m);
     if(!maxInCol)
     {
@@ -121,16 +126,6 @@ void PrintLuckyNumbers(int** matrix, const unsigned int n, const unsigned int m)
 
     delete[] maxInCol;
     maxInCol = nullptr;
-}
-
-void Deallocate(int** matrix, const unsigned int n)
-{
-    for(unsigned i = 0; i < n; i++)
-    {
-        delete[] matrix[i];
-    } 
-    delete[] matrix;
-    matrix = nullptr;
 }
 
 int main()

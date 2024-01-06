@@ -1,35 +1,35 @@
 #include <iostream>
 #include <cstring>
 
-bool IsWordCharacter(char c)
+bool IsWordCharacter(char const c)
 {
     return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || 
            (c >= '0' && c <= '9') || 
            c == '_';
 }
 
-bool IsPunctuationMark(char a)
+bool IsPunctuationMark(char const a)
 {
     return a == ',' || a == '.' || a == '?' || a == '!'; 
 }
 
-bool IsValidString(const char* str)
+bool IsValidString(const char* const str)
 {
-    unsigned i = 0;
-    while(str[i])
+    for(unsigned i = 0; str[i]; ++i)
     {
         if(!IsWordCharacter(str[i]) && !IsPunctuationMark(str[i]) && str[i] != ' ')
         {
             return false;
         }
-        i++;
     }
     return true;
 }
 
-void Modify(char* str)
+void Modify(char* const str)
 {
     unsigned len = strlen(str), read = 0, write = 0;
+
+    while(read < len && str[read] == ' ') ++read;
 
     while(read < len)
     {

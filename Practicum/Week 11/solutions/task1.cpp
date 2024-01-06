@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 
-char* Censor(const char* str)
+char* Censor(const char* const str)
 {
     unsigned len = strlen(str);
 

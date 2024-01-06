@@ -6,7 +6,7 @@ bool IsDigit(char c)
     return c >= '0' && c <= '9';
 }
 
-unsigned CountNumbers(const char* str)
+unsigned CountNumbers(const char* const str)
 {
     unsigned int count = 0, i = 0, len = strlen(str);
     while(i < len)

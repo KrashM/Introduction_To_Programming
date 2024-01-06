@@ -13,7 +13,7 @@ unsigned int ReadSize()
     return size;
 }
 
-void ReadArray(int array[], unsigned int size)
+void ReadArray(int array[], unsigned int const size)
 {
     std::cout << "Enter array:\n";
     for(unsigned i = 0; i < size; i++)
@@ -22,7 +22,7 @@ void ReadArray(int array[], unsigned int size)
     }
 }
 
-void PrintArray(const int array[], unsigned int size)
+void PrintArray(const int array[], unsigned int const size)
 {
     for(unsigned i = 0; i < size; i++)
     {
@@ -41,7 +41,7 @@ int* MergeArr(const int arr1[], const int arr2[], const unsigned int n1, const u
         return nullptr;
     }
 
-    int index = 0;
+    unsigned int index = 0;
 
     while(index1 < n1 || index2 < n2)
     {
