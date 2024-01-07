@@ -27,6 +27,7 @@
 ### [:nine: Pointers & Dynamic memory](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2009)
 ### [:one::zero: (C)Strings](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2010)
 ### [:one::one: (C)Strings](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2011)
+### [:one::two: Recursion](https://github.com/KrashM/Introduction_To_Programming/tree/main/Practicum/Week%2012)
 
 ## :pushpin: Additionals:
 ### [:date: Control preparation Computer Science 1 - 31.10.2023](https://github.com/KrashM/Introduction_To_Programming/tree/main/Additional%20Exercises/Control%20preparation%20CS%201%20-%2031.10.2023)
