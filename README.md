@@ -13,6 +13,7 @@
 ### [:nine: References, Pointers, Dynamic memory](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2009)
 ### [:one::zero: (C)Strings](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2010)
 ### [:one::one: Recursion & Backtracking](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2011)
+### [:one::two: Recursive algorithms](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2012)
 
 
 ## :pushpin: Contents by weeks (Practicum):
