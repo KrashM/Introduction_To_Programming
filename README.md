@@ -15,6 +15,7 @@
 ### [:one::one: Recursion & Backtracking](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2011)
 ### [:one::two: Recursive algorithms](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2012)
 ### [:one::three: Higher order functions](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2013)
+### [:one::four: Structs & Preprocessor directives](https://github.com/KrashM/Introduction_To_Programming/tree/main/Seminars/Week%2014)
 
 
 ## :pushpin: Contents by weeks (Practicum):
